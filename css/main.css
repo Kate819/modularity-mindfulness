@@ -39,18 +39,24 @@ hr {
 
 h2 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0;
+  padding: 1rem;
+  padding-top: .5rem;
+  padding-bottom: 0;
 }
 
 h3 {
-  text-align: center;
-  font-size: 1.125rem;
+  text-align: left;
+  font-size: 1.5rem;
+  padding-top: 1.6rem;
+  margin: 0;
 }
 
 h4 {
-  text-align: center;
+  text-align: left;
   font-size: 1rem;
+  margin: 0;
 }
 
 nav a {
@@ -63,6 +69,31 @@ ul {
   justify-content: center;
   list-style-type: none;
   margin: 0;
+  padding: 0;
+}
+
+.introduction p {
+  padding-top: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.viewing {
+  padding-top: 1rem;
+}
+
+.gravel {
+  padding-top: 1rem;
+}
+
+.symbolism {
+  padding-top: 1rem;
+}
+
+main p {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
 }
 
 li {
@@ -81,6 +112,7 @@ header {
 
 header h2 {
   font-size: 1.125rem;
+  padding: 0;
 }
 
 .btn {
@@ -89,7 +121,15 @@ header h2 {
   text-decoration: none;
   border: .2rem solid #e2e2e2;
   border-radius: .3rem;
-  padding: .5em 1em .6em;
+  padding: .5em;
+}
+
+main hr {
+  margin-top: 2rem;
+}
+
+footer {
+  text-align: center;
 }
 
 @media only screen and (min-width: 38em) {
@@ -106,6 +146,22 @@ header h2 {
       "banner banner";
   }
 
+  ul {
+    justify-content: flex-end;
+    padding-top: 1.3rem;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+
+  h1 {
+    text-align: left;
+    padding-left: .4rem;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+
   hr {
     max-width: 30em;
   }
@@ -114,8 +170,28 @@ header h2 {
     margin: auto;
   }
 
+  section p {
+    font-size: .9rem;
+  }
+
+  h2 {
+    font-weight: lighter;
+    font-size: 1.9rem;
+  }
+
+  main p {
+    font-size: .9rem;
+  }
+
+  header h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: .4rem;
+  }
+
   .banner {
     grid-area: banner;
+    padding-top: 1rem;
   }
 
   .logo {
@@ -135,12 +211,12 @@ header h2 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  h1 {
-    margin-bottom: 0;
+  footer {
+    margin: 0;
   }
 
-  footer {
-    align-items: center;
+  footer p {
+    margin: 0;
   }
 
 }
